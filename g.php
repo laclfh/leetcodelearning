@@ -1,5 +1,5 @@
 <?php
-
+//lfh
  $mysqli = new mysqli("localhost", "root", "123456",'imooc'); 
  /*
 $pid=0;
