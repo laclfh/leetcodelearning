@@ -1,0 +1,15 @@
+//js深拷贝
+    function deepcopy(newobj, oldobj) {
+      for (var k in oldobj) {
+        var item = oldobj[k];
+        if (item instanceof Array) {
+          newobj[k] = [];
+          deepcopy(newobj[k], item);
+        } else if (item instanceof Object) {
+          newobj[k] = {};
+          deepcopy(newobj[k], item);
+        } else {
+          newobj[k] = item;
+        }
+      }
+    }
